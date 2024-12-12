@@ -1,79 +1,99 @@
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
-
-# Project Title
+AI-Powered Language Learning Assistant
 
 Final project for the Building AI course
 
-## Summary
+Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+This project is an AI-powered language learning assistant designed to enhance language acquisition through personalized learning plans, real-time feedback, and interactive exercises. It adapts to users' learning pace and tracks progress through AI-driven analytics.
 
+Background
 
-## Background
+Language learning can be challenging due to differences in learning styles, limited access to native speakers, and a lack of tailored content. This project aims to solve these issues by offering:
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Personalized learning experiences
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Immediate feedback and correction
 
+Access to diverse language materials
 
-## How is it used?
+I was motivated by my passion for multilingual learning and the challenges I faced when studying new languages independently.
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+How is it used?
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
+The AI-powered assistant is accessible through a web or mobile application. Users begin by selecting a target language and taking a placement test. The assistant generates personalized lesson plans, provides exercises, and offers real-time feedback on pronunciation and grammar.
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+The solution is ideal for:
 
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+Students seeking supplementary language practice
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
+Professionals improving their language skills for work
 
-   # write your solution here
+Anyone interested in learning a new language at their own pace
 
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
+Example interface mock-up:
 
-main()
-```
+Example code snippet for generating personalized lessons:
 
+def create_learning_plan(user_level, target_language):
+    lessons = {
+        'beginner': ['basic vocabulary', 'simple sentences'],
+        'intermediate': ['complex grammar', 'reading practice'],
+        'advanced': ['writing essays', 'debate practice']
+    }
+    return lessons[user_level]
 
-## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+print(create_learning_plan('beginner', 'Spanish'))
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+Data sources and AI methods
 
-## Challenges
+The project uses datasets from publicly available language corpora and APIs like:
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Google Cloud Translation API
 
-## What next?
+Lingua Language Database
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+AI techniques include:
 
+Natural Language Processing (NLP) for text analysis
 
-## Acknowledgments
+Machine Learning models for adaptive learning
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+Speech recognition for pronunciation assessment
+
+Syntax
+
+Description
+
+Header
+
+Title
+
+Paragraph
+
+Text
+
+Challenges
+
+The assistant cannot replace human interaction entirely, which is crucial for language fluency. Additionally, ethical considerations include data privacy and ensuring unbiased learning materials.
+
+What next?
+
+Future improvements could involve:
+
+Expanding language support
+
+Adding cultural immersion features
+
+Partnering with educational institutions for broader adoption
+
+Required skills and assistance include advanced NLP expertise, UI/UX design, and cloud infrastructure support.
+
+Acknowledgments
+
+Inspired by language learning apps like Duolingo and Rosetta Stone
+
+NLP models from Hugging Face's open-source library
+
+Project template provided by the Building AI course
+
+Special thanks to all developers and educators working to make language learning more accessible worldwide.
